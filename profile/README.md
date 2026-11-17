@@ -1,4 +1,4 @@
-# <img src="/profile/logo.svg" width="38" height="38" align="center" alt="AWA Logo" /> AWA — Alert Without Alarm
+# <img src="/profile/logo.svg" width="38" height="38" align="Top" alt="AWA Logo" /> AWA — Alert Without Alarm
 
 **Outcome-aware verification of web-tier intrusion alerts, with independent ground truth.**
 
