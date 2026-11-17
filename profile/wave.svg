@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7CB8AE" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#7CB8AE" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#7CB8AE" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7CB8AE" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#7CB8AE" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- الخلفية الداكنة والخط الأفقي -->
+  <rect width="1000" height="120" rx="10" fill="#0B0E12" stroke="#202833" stroke-width="1" />
+  <line x1="0" y1="60" x2="1000" y2="60" stroke="#202833" stroke-width="1" />
+
+  <!-- موجات الضوضاء البرتقالية المتلاشية نحو المنتصف -->
+  <path fill="none" stroke="#C97B4A" stroke-opacity="0.62" stroke-width="1.8" stroke-linecap="round">
+    <animate attributeName="d" dur="4.2s" repeatCount="indefinite" values="M 0,60 C 25,20 55,95 85,55 C 115,10 145,100 180,60 C 215,28 245,85 280,58 C 315,40 350,75 390,60 C 430,54 465,63 500,60;
+              M 0,60 C 25,100 55,25 85,65 C 115,105 145,18 180,60 C 215,92 245,35 280,62 C 315,80 350,45 390,60 C 430,66 465,57 500,60;
+              M 0,60 C 25,20 55,95 85,55 C 115,10 145,100 180,60 C 215,28 245,85 280,58 C 315,40 350,75 390,60 C 430,54 465,63 500,60" />
+  </path>
+
+  <path fill="none" stroke="#C97B4A" stroke-opacity="0.36" stroke-width="1.3" stroke-linecap="round">
+    <animate attributeName="d" dur="3.4s" repeatCount="indefinite" values="M 0,60 C 30,88 65,30 100,62 C 135,92 170,32 205,60 C 240,82 275,44 315,60 C 355,72 400,52 445,60 C 470,63 485,59 500,60;
+              M 0,60 C 30,32 65,90 100,58 C 135,28 170,88 205,60 C 240,38 275,76 315,60 C 355,48 400,68 445,60 C 470,57 485,61 500,60;
+              M 0,60 C 30,88 65,30 100,62 C 135,92 170,32 205,60 C 240,82 275,44 315,60 C 355,72 400,52 445,60 C 470,63 485,59 500,60" />
+  </path>
+
+  <path fill="none" stroke="#C97B4A" stroke-opacity="0.22" stroke-width="1.0" stroke-linecap="round">
+    <animate attributeName="d" dur="2.8s" repeatCount="indefinite" values="M 0,60 C 40,42 80,78 120,60 C 160,44 200,76 240,60 C 280,48 320,70 360,60 C 400,55 450,63 500,60;
+              M 0,60 C 40,78 80,42 120,60 C 160,76 200,44 240,60 C 280,72 320,50 360,60 C 400,65 450,57 500,60;
+              M 0,60 C 40,42 80,78 120,60 C 160,44 200,76 240,60 C 280,48 320,70 360,60 C 400,55 450,63 500,60" />
+  </path>
+
+  <!-- الجزيئات المتناثرة المتحركة -->
+  <circle cx="85" cy="28" r="2.2" fill="#C97B4A" opacity="0.45">
+    <animate attributeName="cy" values="28;38;28" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="155" cy="92" r="2.5" fill="#C97B4A" opacity="0.35">
+    <animate attributeName="cy" values="92;80;92" dur="4.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="235" cy="22" r="1.8" fill="#C97B4A" opacity="0.4">
+    <animate attributeName="cy" values="22;32;22" dur="3.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="310" cy="84" r="2.2" fill="#C97B4A" opacity="0.3">
+    <animate attributeName="cy" values="84;74;84" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="395" cy="44" r="2.6" fill="#7CB8AE" opacity="0.35">
+    <animate attributeName="cy" values="44;52;44" dur="3.0s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- نقطة التحول في المنتصف (AWA Core) -->
+  <circle cx="500" cy="60" r="48" fill="url(#centerGlow)" />
+  <circle cx="500" cy="60" r="3.6" fill="#7CB8AE" />
+
+  <!-- خط الإشارة المستقرة والنبضة المتحركة -->
+  <line x1="500" y1="60" x2="1000" y2="60" stroke="#7CB8AE" stroke-opacity="0.75" stroke-width="2" />
+  <circle cy="60" r="15" fill="url(#pulseGlow)">
+    <animate attributeName="cx" from="500" to="1000" dur="2.6s" repeatCount="indefinite" />
+  </circle>
+</svg>
